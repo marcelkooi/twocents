@@ -4,18 +4,17 @@
 </head>
   
   <body>
-    <h1>TwoCents</h1>
-    <h2>Campaign: Logo Validation</h2>
-  </body>
-  
-  <body>
+    <h1 class="centered">Detailed Dashboard</h1>
+    <h3>Campaign: Logo Validation</h3>
+    
     <h4>Question 1: Does this logo make you think of pizza? </h4>
     <div id="AgeGender" style="width: 700px; height: 300px;"></div>
     <div id="Income" style="width: 700px; height: 300px;"></div>
+    
   </body>
-  
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
+
+<script type="text/javascript" src="jsapi.js"></script>
+<script type="text/javascript">
     
     google.load("visualization", "1.1", {packages:["bar"]});
       google.setOnLoadCallback(drawAgeGenderChart);
