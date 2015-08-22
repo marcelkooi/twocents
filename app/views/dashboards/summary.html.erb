@@ -1,0 +1,48 @@
+<head>
+    <title>Summary Dashboard</title>
+</head>
+
+<body>
+    
+    
+    
+</body>
+
+
+
+
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+<script type="text/javascript">
+    
+    google.load("visualization", "1.1", {packages:["bar"]});
+      google.setOnLoadCallback(drawAgeGenderChart);
+      
+      function drawAgeGenderChart() {
+        var jsonData = google.visualization.arrayToDataTable([
+          ['Age', 'Male (%)', 'Female (%)'],
+          ['0-18', 35, 40],
+          ['19-25', 57, 65],
+          ['26-40', 41, 47],
+          ['41+', 12, 15]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Age and Gender',
+            subtitle: 'Last Updated: August 22, 2015',
+          },
+          bars: 'vertical' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('AgeGender'));
+
+        chart.draw(jsonData, options);
+      }
+      
+        google.setOnLoadCallback(drawIncomeChart);
+      
+
+      
+      
+    </script>
