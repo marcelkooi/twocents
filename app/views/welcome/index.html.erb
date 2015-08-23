@@ -51,19 +51,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6">
-					<h1>Get paid<br/>
-					for your feedback.</h1>
-					<form class="form-inline" role="form">
-					  <div class="form-group">
-					  	<%= form_tag('/welcome/subscribe', method: "post", id: "subscribe",) do -%>
-							<%= email_field(:email, :address, {class: "form-control", id: "exampleInputEmail1", placeholder: "Enter your email address"}) %>
+					<h1>A way to get paid<br/>
+					for your two cents.</h1>
 
-					</form>
-							<%= submit_tag("Invite me!", class: "btn btn-warning btn-lg") %>
-						   <% end %>
+					  <div class="form-group">
+					  	<%= form_tag('/welcome/subscribe', method: "post", id: "subscribe", remote: "true", class: "form-inline") do -%>
+						   <%= email_field(:email, :address, {class: "form-control", id: "exampleInputEmail1", placeholder: "Enter your email address"}) %>
+               	   <%= submit_tag("Invite me!", class: "btn btn-warning btn-lg") %>
+					   <% end %>
 						</div>
-                    <h3>Seriously...No strings attached.<br/>
-					We want your feedback.</h3>
+
+                    <h3>We need beta testers!</h3>
 				</div><!-- /col-lg-6 -->
 				<div class="col-lg-6">
 				  <%= image_tag "ipad-hand.png", class: "img-responsive" %>
@@ -78,29 +76,29 @@
 	<div class="container">
 		<div class="row mt centered">
 			<div class="col-lg-6 col-lg-offset-3">
-				<h1>It's really simple<br/>just swipe left or right.</h1>
-				<h4>We show you an add, product or service. All you have to do is swipe yes or no. We will literally pay you for that.</h4>
+				<h1>How it works.<br/>Quickly share your two cents and make extra cash.</h1>
+				<h4>No hassle, no massive time commitment. Just tell us yes or no.</h4>
 			</div>
 		</div><!-- /row -->
 		
 		<div class="row mt centered">
 			<div class="col-lg-4">
 			  <%= image_tag("STEP-1.png", width: 120) %>
-				<h4>1 - We Show You Something</h4>
-				<p>We show you an ad, service or product.</p>
+				<h4>1 - Open the app.</h4>
+				<p>We show you an add, service or product.</p>
 			</div><!--/col-lg-4 -->
 
 			<div class="col-lg-4">
 			  <%= image_tag("STEP-2.png", width: 120) %>
 				<h4>2 - Swipe Left Or Right</h4>
-				<p>To tell us yes or no.</p>
+				<p>Give us your feedback.</p>
 
 			</div><!--/col-lg-4 -->
 
 			<div class="col-lg-4">
 			  <%= image_tag("STEP-3.png", width: 120) %>
 				<h4>3 - Get Paid</h4>
-				<p>You get paid for each swipe!</p>
+				<p>It's that simple!</p>
 
 			</div><!--/col-lg-4 -->
 		</div><!-- /row -->
@@ -113,12 +111,11 @@
 				<form class="form-inline" role="form">
 				  <div class="form-group">
 				     	<%= form_tag('/welcome/subscribe', method: "post", id: "subscribe",) do -%>
-					   <%= email_field(:email, :address, {class: "form-control", id: "exampleInputEmail1", placeholder: "Enter your email address"}) %>
-				</form>
+					   <%= email_field(:email, :address, {class: "form-control", id: "exampleInputEmail2", placeholder: "Enter your email address"}) %>
    					<%= submit_tag("Invite me!", class: "btn btn-warning btn-lg") %>
    				   <% end %>
 				   </div>
-					
+				</form>
 			</div>
 			<div class="col-lg-3"></div>
 		</div><!-- /row -->
@@ -127,7 +124,7 @@
 	
 
 	<div class="container">
-		<p class="centered">2C LLC | 2015</p>
+		<p class="centered">E-Mail: <a href="mailto:Info@GiveMyTwoCents.co" target="_top">Info@GiveMyTwoCents.co</a><br/>2C LLC | 2015</p>
 	</div><!-- /container -->
 	
 

@@ -1,17 +1,17 @@
 Rails.application.routes.draw do
   
   devise_for :users
+  
   root 'welcome#index'
+  
+  get '/welcome/subscribe', to: "welcome#index"
+  post '/welcome/subscribe', to: "welcome#subscribe"
   
   get '/dashboards/detail', to: "dashboards#detail"
   get '/dashboards/summary', to: "dashboards#summary"
-
-
-  get '/home', to: 'pages#home'
-  post '/home' => 'pages#success'
   
-  get 'welcome/subscribe', to: 'welcome#index'
-  post 'welcome/subscribe' => 'welcome#subscribe'
+  # get '/home', to: 'pages#home'
+  # post '/home' => 'pages#success'
 
   
   # The priority is based upon order of creation: first created -> highest priority.
