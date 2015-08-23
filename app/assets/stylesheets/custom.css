@@ -13,3 +13,8 @@
 #navbar-logo {
   padding-right: 20px;
 }
+
+.navitemtext {
+  font-size: 1.5em;
+  font-weight: 500;
+}
