@@ -17,7 +17,7 @@ class WelcomeController < ApplicationController
     })
      
     if gb.lists.subscribe
-      flash[:success] = "Thank you! Your email address has been saved successfully."
+      flash[:notice] = "Thank you! Your email address has been saved successfully."
       redirect_to welcome_subscribe_path
     end
      
