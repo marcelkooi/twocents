@@ -6,6 +6,10 @@ Rails.application.routes.draw do
   get '/dashboards/detail', to: "dashboards#detail"
   get '/dashboards/summary', to: "dashboards#summary"
 
+
+
+  get '/launch', to: 'emailapi#subscribe'
+  # post '/launch' => 'emailapi#subscribe'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
