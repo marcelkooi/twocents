@@ -14,6 +14,10 @@
             <li><%= link_to "Summary", dashboards_summary_path %></li>
             <li><%= link_to "Detailed", dashboards_detail_path %></li>
       </ul>
+      <div class="nav navbar-nav navbar-right">
+        <%= link_to "Log in", new_user_session_path, class: "btn btn-primary navbar-btn", method: :get %>
+        <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success navbar-btn", method: :get %>
+      </div>
     </div><!-- /.navbar-collapse -->
   </div>
 </nav>
