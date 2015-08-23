@@ -84,11 +84,10 @@
 		<hr>
 		<div class="row centered">
 			<div class="col-lg-6 col-lg-offset-3">
-				<form class="form-inline" role="form">
-				  <div class="form-group">
-				     	<%= form_tag('/welcome/subscribe', method: "post", id: "subscribe",) do -%>
-					   <%= email_field(:email, :address, {class: "form-control", id: "exampleInputEmail2", placeholder: "Enter your email address"}) %>
-   					<%= submit_tag("Invite me!", class: "btn btn-warning btn-lg") %>
+				  	<div class="centered">
+				     <%= form_tag('/welcome/subscribe', method: "post", id: "subscribe", class: "form-inline") do -%>
+					   	<%= email_field(:email, :address, {class: "form-control", id: "exampleInputEmail2", placeholder: "Enter your email address"}) %>
+   						<%= submit_tag("Invite me!", class: "btn btn-warning btn-lg") %>
    				   <% end %>
 				   </div>
 				</form>
