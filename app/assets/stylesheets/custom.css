@@ -1,3 +1,15 @@
 .centered {
   text-align: center;
 }
+
+.navbar.center .navbar-inner {
+    text-align: center;
+}
+.navbar.center .navbar-inner .nav {
+    float: none;
+    display:inline-block;
+}
+
+#navbar-logo {
+  padding-right: 20px;
+}
