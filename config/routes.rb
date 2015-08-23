@@ -7,9 +7,9 @@ Rails.application.routes.draw do
   get '/dashboards/summary', to: "dashboards#summary"
 
 
+  get '/home', to: 'welcome#index'
+  post 'welcome/subscribe' => 'welcome#subscribe'
 
-  get '/launch', to: 'emailapi#subscribe'
-  # post '/launch' => 'emailapi#subscribe'
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

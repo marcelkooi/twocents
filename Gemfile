@@ -16,7 +16,9 @@ gem 'bootstrap-sass', '3.3.5'
 
 gem 'devise', '3.4.1'
 
-gem 'gibbon'
+gem 'gibbon', "1.2.1"
+
+gem 'pry'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '5.0'
