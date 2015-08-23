@@ -1,6 +1,145 @@
-<h1>Get My Awesome News Letter</h1>
-<p>Enter your email address</p>
-<%= form_tag('/welcome/subscribe', method: "post", id: "subscribe",) do -%>
-<%= email_field(:email, :address, {id: "email", placeholder: "email address"}) %>
-<%= submit_tag("Join!") %>
-<% end %>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--<link rel="shortcut icon" href="favicon.png">-->
+
+    <title>2¢ | Get paid for your two cents!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="main.css" rel="stylesheet">
+
+    <!-- Fonts from Google Fonts -->
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="pull-left"><%= image_tag "2cents.png" %></a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Client Login</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+	<div id="headerwrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+					<h1>Get paid<br/>
+					for your feedback.</h1>
+					<form class="form-inline" role="form">
+					  <div class="form-group">
+					  	<%= form_tag('/welcome/subscribe', method: "post", id: "subscribe",) do -%>
+							<%= email_field(:email, :address, {class: "form-control", id: "exampleInputEmail1", placeholder: "Enter your email address"}) %>
+
+					</form>
+							<%= submit_tag("Invite me!", class: "btn btn-warning btn-lg") %>
+						   <% end %>
+						</div>
+                    <h3>Seriously...No strings attached.<br/>
+					We want your feedback.</h3>
+				</div><!-- /col-lg-6 -->
+				<div class="col-lg-6">
+				  <%= image_tag "ipad-hand.png", class: "img-responsive" %>
+
+				</div><!-- /col-lg-6 -->
+				
+			</div><!-- /row -->
+		</div><!-- /container -->
+	</div><!-- /headerwrap -->
+	
+	
+	<div class="container">
+		<div class="row mt centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<h1>It's really simple<br/>just swipe left or right.</h1>
+				<h4>We show you an add, product or service. All you have to do is swipe yes or no. We will literally pay you for that.</h4>
+			</div>
+		</div><!-- /row -->
+		
+		<div class="row mt centered">
+			<div class="col-lg-4">
+			  <%= image_tag("STEP-1.png", width: 120) %>
+				<h4>1 - We Show You Something</h4>
+				<p>We show you an ad, service or product.</p>
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+			  <%= image_tag("STEP-2.png", width: 120) %>
+				<h4>2 - Swipe Left Or Right</h4>
+				<p>To tell us yes or no.</p>
+
+			</div><!--/col-lg-4 -->
+
+			<div class="col-lg-4">
+			  <%= image_tag("STEP-3.png", width: 120) %>
+				<h4>3 - Get Paid</h4>
+				<p>You get paid for each swipe!</p>
+
+			</div><!--/col-lg-4 -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+	
+	<div class="container2">
+		<hr>
+		<div class="row centered">
+			<div class="col-lg-6 col-lg-offset-3">
+				<form class="form-inline" role="form">
+				  <div class="form-group">
+				     	<%= form_tag('/welcome/subscribe', method: "post", id: "subscribe",) do -%>
+					   <%= email_field(:email, :address, {class: "form-control", id: "exampleInputEmail1", placeholder: "Enter your email address"}) %>
+				</form>
+   					<%= submit_tag("Invite me!", class: "btn btn-warning btn-lg") %>
+   				   <% end %>
+				   </div>
+					
+			</div>
+			<div class="col-lg-3"></div>
+		</div><!-- /row -->
+		<hr>
+	</div><!-- /container -->
+	
+
+	<div class="container">
+		<p class="centered">2C LLC | 2015</p>
+	</div><!-- /container -->
+	
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+
+
+

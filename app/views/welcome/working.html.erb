@@ -1,0 +1,7 @@
+
+<h1>Get My Awesome News Letter</h1>
+<p>Enter your email address</p>
+<%= form_tag('/welcome/subscribe', method: "post", id: "subscribe",) do -%>
+<%= email_field(:email, :address, {id: "email", placeholder: "email address"}) %>
+<%= submit_tag("Join!") %>
+<% end %>

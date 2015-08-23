@@ -1,13 +1,16 @@
 Rails.application.routes.draw do
   
   devise_for :users
-  root 'pages#home'
+  root 'welcome#index'
   
   get '/dashboards/detail', to: "dashboards#detail"
   get '/dashboards/summary', to: "dashboards#summary"
 
 
-  get '/home', to: 'welcome#index'
+  get '/home', to: 'pages#home'
+  post '/home' => 'pages#success'
+  
+  get 'welcome/subscribe', to: 'welcome#index'
   post 'welcome/subscribe' => 'welcome#subscribe'
 
   
