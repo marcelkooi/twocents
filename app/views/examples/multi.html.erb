@@ -1,0 +1,109 @@
+<head>
+  <title>Multi Campaign Dashboard</title>
+</head>
+  
+  <body>
+    <div class="container">
+      <div class="row">  
+        <h1 class="centered">Campaign Dashboard</h1>
+        <h3>Campaign: Logo Validation</h3>
+        
+        <div id="q1" style="width: 700px; height: 300px;"></div>
+    	<br/>
+        <div id="q2" style="width: 700px; height: 300px;"></div>
+      </div>
+    </div>
+  </body>
+
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<script type="text/javascript">
+    
+    google.load("visualization", "1.1", {packages:["bar"]});
+      google.setOnLoadCallback(drawAgeGenderChart);
+      
+      function drawAgeGenderChart() {
+		var jsonData = {
+		"cols":
+		[
+		{"id":"gender","type":"string","label":"Gender"},
+		{"id":"camp1","type":"number","label":"Logo 1"},
+		{"id":"camp2","type":"number","label":"Logo 2"},
+		{"id":"camp3","type":"number","label":"Logo 3"}
+		],
+		"rows":
+		[
+		{"c":[{"v":"Female"},{"v":"47.0"},{"v":"52.0"},{"v":"68.0"}]},
+		{"c":[{"v":"Male"},{"v":"49.0"},{"v":"50.0"},{"v":"64.0"}]}
+		]};
+		var data = new google.visualization.DataTable(jsonData);
+		//var jsonData = $.ajax({
+		//		  url: "sample1.json",
+		//		  dataType:"json",
+		//		  async: false
+		//		  }).responseText
+	  //var jsonData = google.visualization.arrayToDataTable([
+      //   ['Age', 'Male (%)', 'Female (%)'],
+      //    ['0-18', 35, 40],
+      //    ['19-25', 57, 65],
+      //    ['26-40', 41, 47],
+      //    ['41+', 12, 15]
+      //  ]);
+
+        var options = {
+          chart: {
+            title: 'Campaign Iterations by Gender'
+          },
+		  colors: ['#FAA52B', '#fa2ee9', '#6fcddf'],
+          bars: 'vertical' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('q1'));
+
+        chart.draw(data, options);
+		
+      }
+      
+        google.setOnLoadCallback(drawIncomeChart);
+      
+      function drawIncomeChart() {
+		var jsonData = {"cols":
+		[
+		{"id":"income_cat","type":"string","label":"Income Level"},
+		{"id":"camp1","type":"number","label":"Logo 1"},
+		{"id":"camp2","type":"number","label":"Logo 2"},
+		{"id":"camp3","type":"number","label":"Logo 3"}
+		],
+		"rows":
+		[
+		{"c":[{"v":"$0-$25k"},{"v":"34.0"},{"v":"35.0"},{"v":"36.0"}]},
+		{"c":[{"v":"$25k-$50k"},{"v":"36.0"},{"v":"41.0"},{"v":"47.0"}]},
+		{"c":[{"v":"$50k-$75k"},{"v":"38.0"},{"v":"40.0"},{"v":"44.0"}]},
+		{"c":[{"v":"$75k-$100k"},{"v":"40.0"},{"v":"43.0"},{"v":"50.0"}]},
+		{"c":[{"v":"$100k-$150k"},{"v":"43.0"},{"v":"45.0"},{"v":"51.0"}]},
+		{"c":[{"v":"$150k+"},{"v":"48.0"},{"v":"52.0"},{"v":"66.0"}]}
+		]};
+		var data = new google.visualization.DataTable(jsonData);
+		
+        //var data = google.visualization.arrayToDataTable([
+        //  ['Income', 'Users (%)'],
+        //  ['$0-50,000', 31],
+        //  ['$50,001-120,000', 52],
+        //  ['$120,001+', 17],
+        //]);
+
+        var options = {
+          chart: {
+            title: 'Campaign Iterations by Household Income'
+          },	
+		  colors: ['#FAA52B', '#fa2ee9', '#6fcddf'],
+          bars: 'vertical' // Required for Material Bar Charts.
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('q2'));
+
+        chart.draw(data, options);
+      }
+      
+      
+    </script>

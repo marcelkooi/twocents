@@ -9,8 +9,10 @@ Rails.application.routes.draw do
   
   get '/welcome/thankyou', to: "welcome#thankyou"
   
-  get '/dashboards/detail', to: "dashboards#detail"
-  get '/dashboards/summary', to: "dashboards#summary"
+  get '/examples/detail', to: "examples#detail"
+  get '/examples/summary', to: "examples#summary"
+  get '/examples/multi', to: "examples#multi"
+  get '/examples/single', to: "examples#single"
   
   # get '/home', to: 'pages#home'
   # post '/home' => 'pages#success'
