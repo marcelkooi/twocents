@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <!--<link rel="stylesheet" href="bootstrap.min.css">-->
-  <!--<link rel="stylesheet" href="custom.css">-->
   <%= favicon_link_tag '/favicon.png' %>
+  
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  
   <link href="bootstrap.css" rel="stylesheet">
-  <link href="custom.css" rel="stylesheet">
+  <link href="main.css.scss" rel="stylesheet">
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,900' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <!--<%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>-->
@@ -20,5 +25,11 @@
   <%= yield %>
 
   
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <%= javascript_include_tag('bootstrap.min.js') %>
+    
 </body>
 </html>

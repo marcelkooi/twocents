@@ -13,9 +13,7 @@ Rails.application.routes.draw do
   get '/examples/summary', to: "examples#summary"
   get '/examples/multi', to: "examples#multi"
   get '/examples/single', to: "examples#single"
-  
-  # get '/home', to: 'pages#home'
-  # post '/home' => 'pages#success'
+
 
   
   # The priority is based upon order of creation: first created -> highest priority.
