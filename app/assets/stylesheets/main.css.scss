@@ -52,32 +52,32 @@ p {
 }
 
 /* Links */
-a {
-    color: #3498db;
-    word-wrap: break-word;
+// a {
+//     color: #3498db;
+//     word-wrap: break-word;
 
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
+//     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+//     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+//     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+//     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+//     transition: color 0.1s ease-in, background 0.1s ease-in;
+// }
 
-a:hover,
-a:focus {
-    color: #7b7b7b;
-    text-decoration: none;
-    outline: 0;
-}
+// a:hover,
+// a:focus {
+//     color: #7b7b7b;
+//     text-decoration: none;
+//     outline: 0;
+// }
 
-a:before,
-a:after {
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
+// a:before,
+// a:after {
+//     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+//     -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+//     -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+//     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+//     transition: color 0.1s ease-in, background 0.1s ease-in;
+// }
 
  hr {
     display: block;
@@ -142,27 +142,6 @@ i {
     background-size: cover;
 }
 
-.dashwrap {
-	/* background: url(../img/bg01.jpg) no-repeat center top; */
-	background-color: #FFFFFF;
-	margin-top: -20px;
-	padding-top:150px;
-	background-attachment: relative;
-	background-position: center center;
-	min-height: 650px;
-	width: 100%;
-	
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
 
 .headerwrap h1 {
 	margin-top: 60px;
@@ -173,14 +152,6 @@ i {
 	letter-spacing: 1px;
 }
 
-.dashwrap h1 {
-    margin-top: 60px;
-	margin-bottom: 15px;
-	color: white;
-	font-size: 45px;
-	font-weight: 300;
-	letter-spacing: 1px;
-}
 
 .headerwrap h3 {
 	margin-top: 12px;
@@ -191,14 +162,6 @@ i {
 	letter-spacing: 1px;
 }
 
-.dashwrap h3 {
-    margin-top: 12px;
-	margin-bottom: 15px;
-	color: white;
-	font-size: 32px;
-	font-weight: 300;
-	letter-spacing: 1px;
-}
 
 /* Custom */
 .pull-left img{
@@ -247,6 +210,49 @@ h4{
     letter-spacing: 1px;
 }
 
+/* Added by Marcel */
+
+.dashwrap {
+	/* background: url(../img/bg01.jpg) no-repeat center top; */
+	background-color: #FFFFFF;
+	margin-top: -20px;
+	padding-top:150px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 650px;
+	width: 100%;
+	
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.dashwrap h1 {
+    margin-top: 60px;
+	margin-bottom: 15px;
+	color: white;
+	font-size: 45px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
+
+.dashwrap h3 {
+    margin-top: 12px;
+	margin-bottom: 15px;
+	color: white;
+	font-size: 32px;
+	font-weight: 300;
+	letter-spacing: 1px;
+}
+
 
 .centered {
   text-align: center;
@@ -259,3 +265,30 @@ h4{
   margin-top: 20px;
 }
 
+
+.footer {
+    width: 100%;
+    height: 50px;
+}
+
+.text-muted {
+    margin-top: 12px;
+    margin-bottom: 15px;
+    color: #777;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.fa-cog {
+    color: #000000;
+}
+
+.fa-cog:hover, .fa-cog:focus {
+    color: #FAA52C;
+    transition: 0.3s;
+}
+
+.footertext {
+    padding-top: 12px;
+}
